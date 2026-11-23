@@ -1,0 +1,210 @@
+{
+  "references": [
+    {
+      "id": "r_1",
+      "type": "component",
+      "title": "Segmented pricing toggle",
+      "description": "A two-state switch that swaps monthly and annual prices in place, with the saving shown only when the annual plan is picked.",
+      "behavior": "The thumb slides to the chosen side in about 180 ms ease-out and the label it leaves turns gray. Prices cross-fade in 140 ms; no layout shift, the widest price reserves its width.",
+      "tags": ["toggle", "pricing"],
+      "locator": "Pricing, second section",
+      "source": { "id": "s_1", "url": "https://example.com/components", "kind": "web", "title": "Example component library" },
+      "created_at": "2026-11-21T09:40:00Z",
+      "assets": [
+        { "id": "a_1", "kind": "image", "role": "primary", "mime": "image/svg+xml", "url": "/assets/a_1", "viewport": "1440x900", "caption": null },
+        { "id": "a_2", "kind": "image", "role": "state", "mime": "image/svg+xml", "url": "/assets/a_2", "viewport": "1440x900", "caption": "Annual selected" },
+        { "id": "a_3", "kind": "demo", "role": "detail", "mime": "text/html", "url": "/demo/a_3", "viewport": null, "caption": null }
+      ]
+    },
+    {
+      "id": "r_2",
+      "type": "component",
+      "title": "Card hover: lift, shadow, quiet border",
+      "description": "The card used across the collection pages. A 2 px lift and a soft shadow, with the border going from light gray to mid gray instead of a colored outline.",
+      "behavior": "Hover lifts the card 2 px over 350 ms with a spring easing and grows the shadow; the border moves from #e7e7e6 to #c6c6c6. Leaving reverses in the same curve, no fade on the image.",
+      "tags": ["card", "hover"],
+      "locator": null,
+      "source": { "id": "s_2", "url": "https://example.com/motion", "kind": "web", "title": "Example motion gallery" },
+      "created_at": "2026-11-20T16:05:00Z",
+      "assets": [
+        { "id": "a_4", "kind": "image", "role": "primary", "mime": "image/svg+xml", "url": "/assets/a_4", "viewport": "1440x900", "caption": null },
+        { "id": "a_5", "kind": "image", "role": "state", "mime": "image/svg+xml", "url": "/assets/a_5", "viewport": "1440x900", "caption": "Hover state" }
+      ]
+    },
+    {
+      "id": "r_3",
+      "type": "component",
+      "title": "Multi-step signup form with inline validation and a progress bar",
+      "description": "Three steps, one question each. The progress bar is the only ornament, and an invalid field is explained under it before the step can advance.",
+      "behavior": "Steps slide 24 px horizontally in 260 ms ease-out, and the progress bar fills in the same 260 ms. The submit button stays disabled and light gray until every visible field is valid.",
+      "tags": ["form", "input", "concept:one question per screen"],
+      "locator": "Onboarding",
+      "source": { "id": "s_1", "url": "https://example.com/components", "kind": "web", "title": "Example component library" },
+      "created_at": "2026-11-20T11:22:00Z",
+      "assets": [
+        { "id": "a_6", "kind": "image", "role": "primary", "mime": "image/svg+xml", "url": "/assets/a_6", "viewport": "1440x900", "caption": null },
+        { "id": "a_7", "kind": "demo", "role": "detail", "mime": "text/html", "url": "/demo/a_7", "viewport": null, "caption": null }
+      ]
+    },
+    {
+      "id": "r_4",
+      "type": "component",
+      "title": "Folding footer",
+      "description": "A large footer whose four link columns collapse into accordions under 760 px, keeping the same order.",
+      "behavior": "Under 760 px each column becomes a disclosure row with a 20 px chevron that rotates 180 degrees in 200 ms ease-out. The copyright stays pinned above the safe area.",
+      "tags": ["footer", "block"],
+      "locator": null,
+      "source": { "id": "s_3", "url": "https://example.com/studio", "kind": "web", "title": "example.com/studio" },
+      "created_at": "2026-11-19T18:47:00Z",
+      "assets": [
+        { "id": "a_8", "kind": "image", "role": "primary", "mime": "image/svg+xml", "url": "/assets/a_8", "viewport": "1440x900", "caption": null }
+      ]
+    },
+    {
+      "id": "r_5",
+      "type": "site",
+      "title": "Studio, personal site",
+      "description": "One column, one typeface, and a wall of small screenshots as the index. The whole site fits in two screens and never asks for attention.",
+      "behavior": "The index is a 3-column grid of 4:3 thumbnails with an 12 px gap; hovering one raises its brightness by 6 percent. The header is 56 px tall and stays in flow, it never becomes sticky.",
+      "tags": ["portfolio"],
+      "locator": null,
+      "source": { "id": "s_3", "url": "https://example.com/studio", "kind": "web", "title": "example.com/studio" },
+      "created_at": "2026-11-21T08:12:00Z",
+      "assets": [
+        { "id": "a_9", "kind": "image", "role": "primary", "mime": "image/svg+xml", "url": "/assets/a_9", "viewport": "1440x900", "caption": null },
+        { "id": "a_10", "kind": "image", "role": "mobile", "mime": "image/svg+xml", "url": "/assets/a_10", "viewport": "390x844", "caption": "Phone" }
+      ]
+    },
+    {
+      "id": "r_6",
+      "type": "site",
+      "title": "Editorial index with a two-column lead and an asymmetric grid",
+      "description": "A magazine index where the lead story takes two thirds and the rest fall into a ragged second column, so the page never reads as a list.",
+      "behavior": "The lead occupies 62 percent of the width above 1100 px and drops to one column at 900 px. Article numbers sit in the left gutter in tabular figures and never move on hover.",
+      "tags": ["editorial", "portfolio"],
+      "locator": "Home",
+      "source": { "id": "s_5", "url": "https://x.com/example_user/status/1000000000000000001", "kind": "tweet", "title": "Example User on X" },
+      "created_at": "2026-11-18T14:30:00Z",
+      "assets": [
+        { "id": "a_11", "kind": "image", "role": "primary", "mime": "image/svg+xml", "url": "/assets/a_11", "viewport": "1440x900", "caption": null },
+        { "id": "a_12", "kind": "image", "role": "detail", "mime": "image/svg+xml", "url": "/assets/a_12", "viewport": "1440x900", "caption": "Article page" }
+      ]
+    },
+    {
+      "id": "r_7",
+      "type": "site",
+      "title": "Product page with a sticky buy bar",
+      "description": "A long product page where the buy bar pins to the bottom edge on scroll and folds the price into a single line.",
+      "behavior": "The bar appears after the hero leaves the viewport, slides up 48 px in 240 ms ease-out, and retracts on any upward scroll of more than 40 px. It keeps a 12 px gap from the bottom edge.",
+      "tags": ["product"],
+      "locator": null,
+      "source": { "id": "s_6", "url": "https://example.com/shaders", "kind": "web", "title": "example.com/shaders" },
+      "created_at": "2026-11-17T10:03:00Z",
+      "assets": [
+        { "id": "a_13", "kind": "image", "role": "primary", "mime": "image/svg+xml", "url": "/assets/a_13", "viewport": "1440x900", "caption": null }
+      ]
+    },
+    {
+      "id": "r_8",
+      "type": "animation",
+      "title": "Sticker peel",
+      "description": "A sticker lifts from its top-left corner on click, folds over itself, and reveals the icon painted underneath.",
+      "behavior": "Peels from the top-left corner on click, about 300 ms ease-out, with a 6 px shadow under the lifted edge and no bounce. The revealed icon fades in during the last 80 ms.",
+      "tags": ["click", "sticker", "concept:substrate reveal"],
+      "locator": "0:04",
+      "source": { "id": "s_7", "url": "https://x.com/example_user/status/1000000000000000002", "kind": "tweet", "title": "Example User on X" },
+      "created_at": "2026-11-21T11:49:00Z",
+      "assets": [
+        { "id": "a_14", "kind": "clip", "role": "primary", "mime": "video/mp4", "url": "/assets/a_14", "viewport": null, "caption": null },
+        { "id": "a_15", "kind": "demo", "role": "detail", "mime": "text/html", "url": "/demo/a_15", "viewport": null, "caption": null }
+      ]
+    },
+    {
+      "id": "r_9",
+      "type": "animation",
+      "title": "Scroll-linked shader reveal",
+      "description": "A grayscale shader field that resolves into the headline as the page scrolls, tied to position rather than time.",
+      "behavior": "Scroll progress 0 to 1 over one viewport drives the dissolve; the field keeps moving on its own at 0.4 tiles per second when the page is still. Nothing plays on load.",
+      "tags": ["scroll", "shader", "loop"],
+      "locator": null,
+      "source": { "id": "s_6", "url": "https://example.com/shaders", "kind": "web", "title": "example.com/shaders" },
+      "created_at": "2026-11-16T19:16:00Z",
+      "assets": [
+        { "id": "a_16", "kind": "clip", "role": "primary", "mime": "video/mp4", "url": "/assets/a_16", "viewport": null, "caption": null }
+      ]
+    },
+    {
+      "id": "r_10",
+      "type": "animation",
+      "title": "Marquee that pauses",
+      "description": "A one-line marquee that runs on its own and stops exactly where it is when the pointer enters it.",
+      "behavior": "Linear 22 s loop at constant speed, pausing on hover without snapping back; resumes from the same offset. A 48 px mask fades both ends so words never touch the edge.",
+      "tags": ["hover", "loop", "text"],
+      "locator": null,
+      "source": { "id": "s_2", "url": "https://example.com/motion", "kind": "web", "title": "Example motion gallery" },
+      "created_at": "2026-11-15T09:30:00Z",
+      "assets": [
+        { "id": "a_17", "kind": "demo", "role": "primary", "mime": "text/html", "url": "/demo/a_17", "viewport": null, "caption": null }
+      ]
+    },
+    {
+      "id": "r_11",
+      "type": "animation",
+      "title": "Text that rises per word on scroll into view",
+      "description": "Each word of a headline moves up 16 px and fades in as the block enters the viewport, with a 30 ms step between words.",
+      "behavior": "Words start at 0.001 opacity and translateY(16px); each enters over 420 ms ease-out with a 30 ms stagger. The block is never re-run once it has played.",
+      "tags": ["text", "transition", "scroll"],
+      "locator": "0:11",
+      "source": { "id": "s_5", "url": "https://x.com/example_user/status/1000000000000000001", "kind": "tweet", "title": "Example User on X" },
+      "created_at": "2026-11-14T13:12:00Z",
+      "assets": [
+        { "id": "a_18", "kind": "image", "role": "primary", "mime": "image/svg+xml", "url": "/assets/a_18", "viewport": "1440x900", "caption": null },
+        { "id": "a_19", "kind": "clip", "role": "detail", "mime": "video/mp4", "url": "/assets/a_19", "viewport": null, "caption": null }
+      ]
+    },
+    {
+      "id": "r_12",
+      "type": "identity",
+      "title": "Northwind",
+      "description": "A gray identity for a shipping company: one geometric mark, a cool gray ramp, and no accent color at all.",
+      "behavior": "The mark is built on a 32 px grid with a 4 px stroke; the ramp runs #f7f7f6 to #141414 in six steps. The mark never appears under 20 px or in reverse below 40 percent contrast.",
+      "tags": ["logo", "palette"],
+      "locator": null,
+      "source": { "id": "s_8", "url": "https://example.com/northwind", "kind": "web", "title": "Northwind brand notes" },
+      "created_at": "2026-11-13T08:00:00Z",
+      "assets": [
+        { "id": "a_20", "kind": "image", "role": "primary", "mime": "image/svg+xml", "url": "/assets/a_20", "viewport": "1440x900", "caption": null },
+        { "id": "a_21", "kind": "image", "role": "detail", "mime": "image/svg+xml", "url": "/assets/a_21", "viewport": "1440x900", "caption": "Gray ramp" }
+      ]
+    },
+    {
+      "id": "r_13",
+      "type": "identity",
+      "title": "Type system: one grotesque, two sizes",
+      "description": "A brand that uses a single family at two optical sizes and lets weight alone separate titles from body text.",
+      "behavior": "Titles at 56/1.05 in weight 740, body at 15/1.5 in weight 450, nothing in between. Tracking tightens to -0.03em only above 40 px.",
+      "tags": ["type", "brand-guidelines"],
+      "locator": "Typography",
+      "source": { "id": "s_8", "url": "https://example.com/northwind", "kind": "web", "title": "Northwind brand notes" },
+      "created_at": "2026-11-12T17:25:00Z",
+      "assets": [
+        { "id": "a_22", "kind": "image", "role": "primary", "mime": "image/svg+xml", "url": "/assets/a_22", "viewport": "1440x900", "caption": null }
+      ]
+    },
+    {
+      "id": "r_14",
+      "type": "identity",
+      "title": "Geometric illustration set",
+      "description": "Spot illustrations built from circles and quarter arcs, filled only with the identity gray ramp.",
+      "behavior": "Every shape is a circle, an arc, or a rounded rectangle with a 4 px radius; overlaps are knocked out, never stacked at full opacity. Line weight stays at 2 px at 1x.",
+      "tags": ["illustration", "palette", "concept:one shape family"],
+      "locator": null,
+      "source": { "id": "s_9", "url": "https://example.com/geo-set", "kind": "web", "title": "Geometric set" },
+      "created_at": "2026-11-11T10:45:00Z",
+      "assets": [
+        { "id": "a_23", "kind": "image", "role": "primary", "mime": "image/svg+xml", "url": "/assets/a_23", "viewport": "1440x900", "caption": null },
+        { "id": "a_24", "kind": "image", "role": "detail", "mime": "image/svg+xml", "url": "/assets/a_24", "viewport": "1440x900", "caption": "Second spread" }
+      ]
+    }
+  ]
+}

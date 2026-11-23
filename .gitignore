@@ -1,0 +1,11 @@
+/uirefs
+/data/
+/worktrees/
+*.log
+**/logs/
+**/data/
+*.db
+*.db-wal
+*.db-shm
+/docs/briefs/
+/docs/reports/

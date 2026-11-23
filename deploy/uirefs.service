@@ -1,0 +1,17 @@
+[Unit]
+Description=uirefs, a self-hosted library of UI references
+After=network.target
+
+[Service]
+# Template, rendered by install.sh into the user's systemd directory with the
+# real binary, data directory, port and (optionally) the embeddings URL. Do not
+# copy this file into place as it is.
+ExecStart="@BIN@" serve --port @PORT@ --data "@DATA@"
+Restart=on-failure
+RestartSec=2
+# Optional embeddings sidecar (docs/design.md §6): install.sh fills this in
+# when UIREFS_EMBED_URL is set in its environment.
+@EMBED_ENV@
+
+[Install]
+WantedBy=default.target

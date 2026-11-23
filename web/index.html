@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f6f6f5">
+<title>uirefs</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1' y='1' width='6' height='6' rx='2' fill='%23141414'/%3E%3Crect x='9' y='1' width='6' height='6' rx='2' fill='%23141414'/%3E%3Crect x='1' y='9' width='6' height='6' rx='2' fill='%23141414'/%3E%3Crect x='9' y='9' width='6' height='6' rx='3' fill='%23a3a3a3'/%3E%3C/svg%3E">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/AlloVariable.woff2">
+<link rel="stylesheet" href="/app.css">
+<script type="module" src="/js/app.js"></script>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="row">
+      <a class="brand" href="/" aria-label="uirefs, all references">
+        <span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="word">uirefs</span>
+      </a>
+
+      <div class="seg types" role="group" aria-label="Type">
+        <span class="thumb" aria-hidden="true"></span>
+        <button type="button" data-type="" aria-pressed="true">All</button>
+        <button type="button" data-type="component" aria-pressed="false">Components</button>
+        <button type="button" data-type="site" aria-pressed="false">Sites</button>
+        <button type="button" data-type="animation" aria-pressed="false">Animations</button>
+        <button type="button" data-type="identity" aria-pressed="false">Identity</button>
+        <button type="button" data-type="resource" aria-pressed="false">Resources</button>
+      </div>
+
+      <div class="find">
+        <button class="glass" type="button" aria-label="Search" tabindex="-1"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.6" cy="8.6" r="5.6"/><path d="m13 13 4 4"/></svg></button>
+        <input id="q" type="search" placeholder="Search" aria-label="Search" autocomplete="off" spellcheck="false" enterkeyhint="search">
+        <kbd aria-hidden="true">/</kbd>
+        <button class="clear" type="button" aria-label="Clear search" title="Clear"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 6 8 8M14 6l-8 8"/></svg></button>
+      </div>
+    </div>
+    <div class="rail-wrap">
+      <div class="rail" role="group" aria-label="Tag"></div>
+    </div>
+  </header>
+
+  <main class="grid" aria-label="References" aria-busy="true"></main>
+</div>
+
+<div class="scrim"></div>
+<aside class="panel" aria-label="Reference" aria-hidden="true" tabindex="-1" inert>
+  <div class="grab" aria-hidden="true"><i></i></div>
+  <div class="pbar">
+    <span class="ptype"></span>
+    <div class="pnav">
+      <button type="button" class="ico" data-step="-1" aria-label="Previous reference" title="Previous (←)"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12 5-5 5 5 5"/></svg></button>
+      <button type="button" class="ico" data-step="1" aria-label="Next reference" title="Next (→)"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 5 5 5-5 5"/></svg></button>
+      <button type="button" class="close" data-close>Close</button>
+    </div>
+  </div>
+  <div class="pscroll"></div>
+</aside>
+
+<div class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "uirefs-embeddings-sidecar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Optional OpenAI-compatible /v1/embeddings endpoint for uirefs, backed by Xenova/all-MiniLM-L6-v2 (int8).",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^3.8.1"
+  }
+}
