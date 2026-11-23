@@ -1,11 +1,25 @@
 # uirefs
 
-A self-hosted library of UI references — a component, a whole site, an animation, an identity, a resource — that the
-owner browses in a web UI and agents read and write over MCP. One static Go binary, no auth (the
-network is the access control). Design, data model, MCP tools and the acceptance list:
-[`docs/design.md`](docs/design.md).
+A library of UI references for your coding agents, to fight AI slop.
+
+Left alone, an agent designs the average UI: the same cards, gradients and spacing as everything else.
+uirefs gives it something better to start from: the components, sites, animations, identities and
+resources **you** collect, each saved with images, a working demo and notes on how it behaves.
 
 ![The uirefs web UI](docs/screenshot.png)
+
+## How it works
+
+1. **Save.** Found something good online? Send the link to your agent and tell it to save it in uirefs.
+   The agent reads the page, captures images, takes the interactive demo when it can, and writes down what
+   it is and how it behaves.
+2. **Browse.** You get a web UI to search, filter and clean up the library.
+3. **Use.** When an agent designs or builds UI, it searches the library over MCP, picks the references that
+   fit, and fetches everything it needs to implement them and check the result.
+
+It is one static Go binary with a web UI and an MCP server, self-hosted, with no authentication (the network
+is the access control). Design, data model, MCP tools and the acceptance list:
+[`docs/design.md`](docs/design.md).
 
 ## Install
 
