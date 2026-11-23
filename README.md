@@ -30,6 +30,39 @@ Idempotent: run it again after a `git pull`. It:
 **If you are a coding agent:** run `./install.sh --yes`, then call the MCP `guide` tool before saving
 or searching references.
 
+### Skills (optional)
+
+The MCP `guide` tool already explains how to use the library. The skills in [`skills/`](skills) add the
+workflows for saving a reference with its demo (`ui-reference-ingestion`), rebuilding a gated piece from its
+public preview (`ui-reference-recreation`) and browsing the library for inspiration (`ui-reference-search`):
+
+```sh
+npx -y skills add uesteibar/uirefs --skill ui-reference-ingestion --skill ui-reference-search --skill ui-reference-recreation -g -a <your-agent> -y
+```
+
+Replace `<your-agent>` with `claude-code`, `codex`, `pi`, and so on (repeat `-a` for several).
+
+### Prompt for your agent
+
+Paste this into a coding agent to install uirefs and connect it:
+
+```text
+Install uirefs (https://github.com/uesteibar/uirefs) on this machine and connect it to yourself.
+
+1. Run: git clone https://github.com/uesteibar/uirefs.git && cd uirefs && ./install.sh --yes
+   It needs git, curl and Go (it installs Go with mise when available) and never uses sudo.
+   It builds the binary, starts a user service on 127.0.0.1:4880 and registers the MCP in the
+   clients it finds on PATH (claude, codex, hermes, pi).
+2. If your own client is not registered, add the MCP by hand: streamable HTTP,
+   http://127.0.0.1:4880/mcp, no auth.
+3. Install the skills for your agent:
+   npx -y skills add uesteibar/uirefs --skill ui-reference-ingestion --skill ui-reference-search --skill ui-reference-recreation -g -a <your-agent> -y
+4. Verify with real calls: curl http://127.0.0.1:4880/api/references, then call the MCP
+   `guide` and `search` tools. Read `guide` before saving anything.
+5. Do not expose the service beyond localhost: it has no authentication.
+   Report what you installed, the commands that ran and any step that failed.
+```
+
 Flags: `--port N`, `--data DIR`, `--no-service`, `--no-mcp`, `--mcp claude,codex,hermes,pi`, `--yes`,
 `--force`, `--dry-run`, `-h`. Environment: `UIREFS_BIN`, `UIREFS_DATA`, `UIREFS_PORT`, `UIREFS_UNIT`,
 `UIREFS_PUBLIC_URL` (the URL agents should use, for example a private HTTPS name; the MCP URL is
